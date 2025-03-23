@@ -1,0 +1,38 @@
+#header: EntityAPI
+#entityType: Ability
+#aggressiveInlining: true
+#
+#namespace: SampleGame
+#className: AbilityAPI
+#directory: Assets/Game/Scripts/Ability/
+#
+#imports:
+#  - UnityEngine
+#  - Atomic.Entities
+#  - System
+#  - Atomic.Elements
+#  - Modules.Gameplay
+#  - Atomic.Extensions
+#
+#tags:
+#  - Base
+#  - Point
+#  - Target
+#
+#values:
+#  - Config: AbilityConfig
+#  - BaseCondition: IFunction<bool>
+#  - BaseAction: IAction
+#  - BaseEvent: IEvent 
+#  - TargetCondition: IFunction<IEntity, bool>
+#  - TargetAction: IAction<IEntity>
+#  - TargetEvent: IEvent<IEntity>
+#  - PointCondition: IFunction<Vector3, bool>
+#  - PointAction: IAction<Vector3>
+#  - PointEvent: IEvent<Vector3>
+#  - Character: IEntity
+#  - Charges: IReactiveVariable<int>
+#  - Cooldown: Cooldown
+#  - ManaCost: IValue<int>
+#  - Radius: IValue<float>
+#

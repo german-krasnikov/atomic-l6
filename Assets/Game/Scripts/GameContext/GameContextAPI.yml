@@ -1,0 +1,20 @@
+header: ContextAPI
+contextType: IGameContext
+aggressiveInlining: true
+
+namespace: SampleGame
+className: GameContextAPI
+directory: Assets/Game/Scripts/GameContext/
+ 
+imports:
+- UnityEngine
+- Atomic.Contexts
+- Atomic.Entities
+- Atomic.Elements
+- System.Collections.Generic
+
+values:
+- BulletPool: IEntityPool
+- Players: IDictionary<PlayerId, IPlayerContext>
+- WorldTransform: Transform
+- EntityPool: PrefabEntityPool

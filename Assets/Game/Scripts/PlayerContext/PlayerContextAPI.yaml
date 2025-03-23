@@ -1,0 +1,29 @@
+header: ContextAPI
+contextType: IPlayerContext
+aggressiveInlining: true
+
+namespace: SampleGame
+className: PlayerContextAPI
+directory: Assets/Game/Scripts/PlayerContext/
+
+imports:
+  - UnityEngine
+  - Atomic.Contexts
+  - Atomic.Entities
+  - Atomic.Elements
+  - System.Collections.Generic
+
+values:
+  - PlayerId: IValue<PlayerId>
+  - Character: IEntity
+  - CameraOffset: IValue<Vector3>
+  - Camera: Camera
+  - InputMap: InputMap
+  - MaxMana: IValue<int>
+  - CurrentMana: IReactiveVariable<int>
+    
+  #Abilities
+  - Abilities: IReactiveDictionary<string, Ability>
+#  - DashAbility: Ability
+#  - TeleportAbility: Ability
+#  - StunAbility: Ability
